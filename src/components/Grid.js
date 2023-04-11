@@ -2,7 +2,7 @@ import React from 'react'
 import {useState, useEffect} from 'react'
 import Circle from './Circle'
 
-export default function Grid({circles, setScore}) {
+export default function Grid({circles, addPoint}) {
 	const [active, setActive] = useState(null) // number of the circle that is active -> starts as null
 
 	useEffect(() => {
@@ -16,7 +16,7 @@ export default function Grid({circles, setScore}) {
 	}, [])
 
 	const cells = circles.map((obj) => (
-		<Circle active={active} number={obj} setScore={setScore} key={obj}>
+		<Circle active={active} number={obj} addPoint={addPoint} key={obj}>
 			{obj}
 		</Circle>
 	))

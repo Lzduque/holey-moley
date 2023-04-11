@@ -1,11 +1,15 @@
 import React from 'react'
+import {useState} from 'react'
 
 export default function Circle({active, number, score, setScore}) {
-	const isLit = active === number
+	const [clicked, setClicked] = useState(false)
+
+	const isLit = active === number && !clicked
 
 	const handleClick = (e) => {
 		const newScore = score + 1
 		setScore(newScore)
+		setClicked(true)
 	}
 
 	return isLit ? (

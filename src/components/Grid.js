@@ -27,7 +27,7 @@ export default function Grid({circles, addPoint}) {
 	))
 
 	return (
-		<div className='grid gap-y-3.5	gap-x-3.5	grid-cols-5	mx-auto my-auto w-1/4	'>
+		<div className='grid gap-y-3.5	gap-x-3.5	grid-cols-5	mx-auto my-auto w-auto	'>
 			{cells}
 		</div>
 	)

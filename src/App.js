@@ -17,7 +17,7 @@ function App() {
 				<Score score={score} className='block'></Score>
 			</header>
 			<main>
-				<Grid circles={circles} score={score} setScore={setScore} />
+				<Grid circles={circles} setScore={setScore} />
 			</main>
 		</div>
 	)

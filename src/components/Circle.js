@@ -1,10 +1,10 @@
 import React from 'react'
 import {useState} from 'react'
 
-export default function Circle({active, number, addPoint}) {
+export default function Circle({active, addPoint}) {
 	const [clicked, setClicked] = useState(false)
 
-	const isLit = active === number && !clicked
+	const isLit = active && !clicked
 
 	const handleClick = (e) => {
 		addPoint()

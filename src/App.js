@@ -1,4 +1,3 @@
-import './App.css'
 import Grid from './components/Grid'
 import Score from './components/Score'
 import {useState} from 'react'
@@ -20,7 +19,7 @@ function App() {
 				</h1>
 				<Score score={score} className='block'></Score>
 			</header>
-			<main>
+			<main className='flex min-w-fit	w-auto'>
 				<Grid circles={circles} addPoint={addPoint} />
 			</main>
 		</div>
